@@ -18,40 +18,515 @@
 
         <h2 class="mt-4">Datos Personales (Opcionales)</h2>
         <form id="consultaForm">
-            <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre:</label>
-                <input type="text" class="form-control" id="nombre">
-            </div>
-            <div class="mb-3">
-                <label for="edad" class="form-label">Edad:</label>
-                <input type="number" class="form-control" id="edad">
-            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="edad" class="form-label">Edad:</label>
+                    <input type="number" class="form-control" id="edad">
+                </div>
             </div>
             <div class="mb-3">
                 <label for="ocupacion" class="form-label">Ocupación:</label>
                 <input type="text" class="form-control" id="ocupacion">
             </div>
-            <div class="mb-3">
-                <label for="sexo" class="form-label">Sexo:</label>
-                <select class="form-select" id="sexo">
-                    <option selected>Selecciona una opción</option>
-                    <option value="masculino">Masculino</option>
-                    <option value="femenino">Femenino</option>
-                    <option value="otro">Otro</option>
-                </select>
-            </div>
-            <div class="mb-3">
-                <label for="localidad" class="form-label">Localidad:</label>
-                <input type="text" class="form-control" id="localidad">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="sexo" class="form-label">Sexo:</label>
+                    <select class="form-select" id="sexo">
+                        <option selected>Selecciona una opción</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="localidad" class="form-label">Localidad:</label>
+                    <input type="text" class="form-control" id="localidad">
+                </div>
             </div>
             <div class="mb-3">
                 <label for="telefono" class="form-label">Teléfono:</label>
                 <input type="tel" class="form-control" id="telefono">
             </div>
             <h2 class="mt-4">Cuestionario</h2>
+            <p>Selecciona la respuesta que consideres más adecuada para cada pregunta marcando la casilla correspondiente o escribiendo la respuesta en los espacios correspondientes. En algunas preguntas podrás seleccionar más de una respuesta si consideras que aplica.</p>
+
             </form>
     </div>
+        <div class="container mt-5">
+        <h1 class="mb-4">Cuestionario</h1>
+        
+        <!-- EDUCACIÓN -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-graduation-cap"></i> Educación
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label>¿Cómo calificarías la calidad en general de la educación en el municipio de El Marqués?</label>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="educacion_calidad" id="educacion_buena" value="Buena">
+                            <label class="form-check-label" for="educacion_buena">Buena</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="educacion_calidad" id="educacion_regular" value="Regular">
+                            <label class="form-check-label" for="educacion_regular">Regular</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="educacion_calidad" id="educacion_deficiente" value="Deficiente">
+                            <label class="form-check-label" for="educacion_deficiente">Deficiente</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>¿Qué acciones debería priorizar el municipio de El Marqués para mejorar la calidad de la educación?</label>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="educacion_acciones" id="infraestructura_adecuada" value="La infraestructura adecuada">
+                            <label class="form-check-label" for="infraestructura_adecuada">La infraestructura adecuada</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="educacion_acciones" id="programas_acceso_educacion" value="Programas de acceso a la educación">
+                            <label class="form-check-label" for="programas_acceso_educacion">Programas de acceso a la educación (distancia, transporte, becas, etc.)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="educacion_acciones" id="mejorar_infraestructura" value="Mejorar la infraestructura escolar">
+                            <label class="form-check-label" for="mejorar_infraestructura">Mejorar la infraestructura escolar</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="educacion_acciones" id="capacitar_personal_docente" value="Capacitar y actualizar al personal docente de manera continua">
+                            <label class="form-check-label" for="capacitar_personal_docente">Capacitar y actualizar al personal docente de manera continua</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="educacion_acciones" id="incrementar_acceso_tecnologias" value="Incrementar el acceso a tecnologías educativas">
+                            <label class="form-check-label" for="incrementar_acceso_tecnologias">Incrementar el acceso a tecnologías educativas (computadoras, internet, etc.)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="educacion_acciones" id="programas_educacion_ambiental" value="Implementar programas de educación ambiental y sustentabilidad">
+                            <label class="form-check-label" for="programas_educacion_ambiental">Implementar programas de educación ambiental y sustentabilidad</label>
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="otros_educacion">Otros (especifica):</label>
+                            <input type="text" class="form-control" id="otros_educacion" name="otros_educacion">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EQUIDAD DE GENERO -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-venus-mars"></i> Equidad de Género
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label>¿Cómo consideras las acciones para la equidad de género que implementa el municipio de El Marqués?</label>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="equidad_genero" id="equidad_buena" value="Buena">
+                            <label class="form-check-label" for="equidad_buena">Buena</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="equidad_genero" id="equidad_regular" value="Regular">
+                            <label class="form-check-label" for="equidad_regular">Regular</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="equidad_genero" id="equidad_mala" value="Mala">
+                            <label class="form-check-label" for="equidad_mala">Mala</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>¿Qué acciones consideras que deben implementarse para fomentar la equidad de género en el municipio de El Marqués?</label>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="equidad_acciones" id="apoyos_psicologicos_legales" value="Apoyos psicológicos y legales">
+                            <label class="form-check-label" for="apoyos_psicologicos_legales">Apoyos psicológicos y legales</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="equidad_acciones" id="programa_formacion_capacitacion" value="Programa de formación y capacitación">
+                            <label class="form-check-label" for="programa_formacion_capacitacion">Programa de formación y capacitación</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="equidad_acciones" id="acciones_empoderamiento" value="Acciones de empoderamiento">
+                            <label class="form-check-label" for="acciones_empoderamiento">Acciones de empoderamiento</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="equidad_acciones" id="programa_salud_bienestar" value="Programa de salud y bienestar">
+                            <label class="form-check-label" for="programa_salud_bienestar">Programa de salud y bienestar</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="equidad_acciones" id="fomento_emprendimiento" value="Fomento al emprendimiento y apoyo de oportunidades laborales a la mujer">
+                            <label class="form-check-label" for="fomento_emprendimiento">Fomento al emprendimiento y apoyo de oportunidades laborales a la mujer</label>
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="otros_equidad">Otros (especifica):</label>
+                            <input type="text" class="form-control" id="otros_equidad" name="otros_equidad">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TURISMO -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-globe-americas"></i> Turismo
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label>¿Cómo consideras las acciones para fomentar el turismo que implementa el municipio de El Marqués?</label>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="turismo" id="turismo_buena" value="Buena">
+                            <label class="form-check-label" for="turismo_buena">Buena</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="turismo" id="turismo_regular" value="Regular">
+                            <label class="form-check-label" for="turismo_regular">Regular</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="turismo" id="turismo_mala" value="Mala">
+                            <label class="form-check-label" for="turismo_mala">Mala</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>¿Qué acciones consideras que deben implementarse para fomentar el turismo en el municipio de El Marqués?</label>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="turismo_acciones" id="rutas_turisticas" value="Creación de rutas turísticas, culturales y naturales">
+                            <label class="form-check-label" for="rutas_turisticas">Creación de rutas turísticas, culturales y naturales</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="turismo_acciones" id="capacitacion_servicios_turisticos" value="Programa de capacitación para mejorar de los servicios turísticos">
+                            <label class="form-check-label" for="capacitacion_servicios_turisticos">Programa de capacitación para mejorar de los servicios turísticos</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="turismo_acciones" id="apoyo_infraestructura_turistica" value="Apoyo financiero para crear y/o mejorar la infraestructura turística">
+                            <label class="form-check-label" for="apoyo_infraestructura_turistica">Apoyo financiero para crear y/o mejorar la infraestructura turística</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="turismo_acciones" id="promocion_patrimonio" value="Promoción y difusión del patrimonio cultural y natural del Municipio El Marques">
+                            <label class="form-check-label" for="promocion_patrimonio">Promoción y difusión del patrimonio cultural y natural del Municipio El Marques</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="turismo_acciones" id="eventos_culturales_deportivos" value="Eventos culturales y deportivos en el municipio">
+                            <label class="form-check-label" for="eventos_culturales_deportivos">Eventos culturales y deportivos en el municipio</label>
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="otros_turismo">Otros (especifica):</label>
+                            <input type="text" class="form-control" id="otros_turismo" name="otros_turismo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIVIENDA -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-home"></i> Vivienda
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label>¿Cómo calificas el programa de apoyo y mejora a la vivienda digna el municipio de El Marqués?</label>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="vivienda" id="vivienda_buena" value="Buena">
+                            <label class="form-check-label" for="vivienda_buena">Buena</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="vivienda" id="vivienda_regular" value="Regular">
+                            <label class="form-check-label" for="vivienda_regular">Regular</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="vivienda" id="vivienda_mala" value="Mala">
+                            <label class="form-check-label" for="vivienda_mala">Mala</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>¿Qué tipo de programas y apoyos te gustaría que se implementaran para mejorar la calidad y accesibilidad a la vivienda digna en el municipio?</label>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="vivienda_acciones" id="construccion_vivienda_sustentable" value="Apoyos para la construcción de vivienda sustentable">
+                            <label class="form-check-label" for="construccion_vivienda_sustentable">Apoyos para la construcción de vivienda sustentable</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="vivienda_acciones" id="regularizacion_tenencia" value="Accesos a programas de regularización de la tenencia de la tierra">
+                            <label class="form-check-label" for="regularizacion_tenencia">Accesos a programas de regularización de la tenencia de la tierra</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="vivienda_acciones" id="subsidios_servicios_basicos" value="Subsidios para la instalación de servicios básicos en la vivienda">
+                            <label class="form-check-label" for="subsidios_servicios_basicos">Subsidios para la instalación de servicios básicos en la vivienda</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="vivienda_acciones" id="mejora_vivienda_existente" value="Programa de apoyo y equipamiento para mejora de la vivienda existente">
+                            <label class="form-check-label" for="mejora_vivienda_existente">Programa de apoyo y equipamiento para mejora de la vivienda existente</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="vivienda_acciones" id="fondos_reparacion_urgente" value="Acceso a fondos para reparación urgente de viviendas por contingencias naturales">
+                            <label class="form-check-label" for="fondos_reparacion_urgente">Acceso a fondos para reparación urgente de viviendas por contingencias naturales</label>
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="otros_vivienda">Otros (especifica):</label>
+                            <input type="text" class="form-control" id="otros_vivienda" name="otros_vivienda">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OBRAS PÚBLICAS -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-tools"></i> Obras Públicas
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label>¿Cómo calificas el programa la obra pública del municipio de El Marqués?</label>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="obras_publicas" id="obras_buena" value="Buena">
+                            <label class="form-check-label" for="obras_buena">Buena</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="obras_publicas" id="obras_regular" value="Regular">
+                            <label class="form-check-label" for="obras_regular">Regular</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="obras_publicas" id="obras_mala" value="Mala">
+                            <label class="form-check-label" for="obras_mala">Mala</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>¿Qué tipo de obras públicas consideras más necesarias en tu comunidad?</label>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="obras_acciones" id="mejora_calles" value="Mejora de calles, pavimentación y alumbrado publico">
+                            <label class="form-check-label" for="mejora_calles">Mejora de calles, pavimentación y alumbrado publico</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="obras_acciones" id="areas_verdes" value="Construcciones de áreas verdes y recreativas">
+                            <label class="form-check-label" for="areas_verdes">Construcciones de áreas verdes y recreativas</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="obras_acciones" id="infraestructura_educativa" value="Infraestructura educativa">
+                            <label class="form-check-label" for="infraestructura_educativa">Infraestructura educativa</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="obras_acciones" id="servicios_agua" value="Servicios de agua potable y saneamiento">
+                            <label class="form-check-label" for="servicios_agua">Servicios de agua potable y saneamiento</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="obras_acciones" id="infraestructura_salud" value="Infraestructura de salud">
+                            <label class="form-check-label" for="infraestructura_salud">Infraestructura de salud</label>
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="otros_obras">Otros (especifica):</label>
+                            <input type="text" class="form-control" id="otros_obras" name="otros_obras">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BUEN GOBIERNO -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-balance-scale"></i> Buen Gobierno
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label>¿Cuál es tu nivel de satisfacción con la gestión del gobierno municipal?</label>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="buen_gobierno" id="gestion_alta" value="Alta">
+                            <label class="form-check-label" for="gestion_alta">Alta</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="buen_gobierno" id="gestion_regular" value="Regular">
+                            <label class="form-check-label" for="gestion_regular">Regular</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="buen_gobierno" id="gestion_baja" value="Baja">
+                            <label class="form-check-label" for="gestion_baja">Baja</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>¿Qué tipo de programas y apoyos consideras que serían más efectivas para promover el buen gobierno en el municipio y fortalecer la participación ciudadana?</label>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="gobierno_acciones" id="participacion_ciudadana" value="Creación de espacios de participación ciudadana en la toma de decisiones">
+                            <label class="form-check-label" for="participacion_ciudadana">Creación de espacios de participación ciudadana en la toma de decisiones</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="gobierno_acciones" id="comunicacion_directa" value="Establecer canales de comunicación directa entre la población y las autoridades locales">
+                            <label class="form-check-label" for="comunicacion_directa">Establecer canales de comunicación directa entre la población y las autoridades locales</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="gobierno_acciones" id="etica_integridad" value="Promoción de la ética y la integridad de la función publica">
+                            <label class="form-check-label" for="etica_integridad">Promoción de la ética y la integridad de la función publica</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="gobierno_acciones" id="simplificacion_tramites" value="Programa de simplificación de trámites">
+                            <label class="form-check-label" for="simplificacion_tramites">Programa de simplificación de trámites</label>
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="otros_gobierno">Otros (especifica):</label>
+                            <input type="text" class="form-control" id="otros_gobierno" name="otros_gobierno">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CULTURA Y DEPORTE -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-futbol"></i> Cultura y Deporte
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label>¿Cuál es tu nivel de satisfacción con la promoción y apoyo al deporte y la cultura en el municipio de El Marqués?</label>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="cultura_deporte" id="deporte_alta" value="Alta">
+                            <label class="form-check-label" for="deporte_alta">Alta</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="cultura_deporte" id="deporte_regular" value="Regular">
+                            <label class="form-check-label" for="deporte_regular">Regular</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="cultura_deporte" id="deporte_baja" value="Baja">
+                            <label class="form-check-label" for="deporte_baja">Baja</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>¿Qué tipo de programas y apoyos consideras que serían más efectivas para promover la cultura y el deporte en el municipio de El Marqués?</label>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="cultura_deporte_acciones" id="eventos_culturales" value="Festivales, eventos y competencias Culturales y Artísticos">
+                            <label class="form-check-label" for="eventos_culturales">Festivales, eventos y competencias Culturales y Artísticos</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="cultura_deporte_acciones" id="talleres_cursos" value="Talleres y Cursos de Formación">
+                            <label class="form-check-label" for="talleres_cursos">Talleres y Cursos de Formación</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="cultura_deporte_acciones" id="infraestructura_deportiva" value="Infraestructura Deportiva">
+                            <label class="form-check-label" for="infraestructura_deportiva">Infraestructura Deportiva</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="cultura_deporte_acciones" id="educacion_entrenamiento" value="Programas de Educación y Entrenamiento">
+                            <label class="form-check-label" for="educacion_entrenamiento">Programas de Educación y Entrenamiento</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="cultura_deporte_acciones" id="fondos_proyectos_culturales" value="Establecer fondos municipales o buscar patrocinios corporativos para apoyar proyectos culturales y deportivos">
+                            <label class="form-check-label" for="fondos_proyectos_culturales">Establecer fondos municipales o buscar patrocinios corporativos para apoyar proyectos culturales y deportivos</label>
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="otros_cultura_deporte">Otros (especifica):</label>
+                            <input type="text" class="form-control" id="otros_cultura_deporte" name="otros_cultura_deporte">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- APOYO PSICOLÓGICO Y ADICCIONES -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-brain"></i> Apoyo Psicológico y Adicciones
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label>¿Cómo calificas el acceso a los servicios de atención psicológica y prevención de las adicciones en el municipio de El Marqués?</label>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="psicologico_adicciones" id="psicologico_bueno" value="Bueno">
+                            <label class="form-check-label" for="psicologico_bueno">Bueno</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="psicologico_adicciones" id="psicologico_regular" value="Regular">
+                            <label class="form-check-label" for="psicologico_regular">Regular</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="psicologico_adicciones" id="psicologico_malo" value="Malo">
+                            <label class="form-check-label" for="psicologico_malo">Malo</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>¿Qué tipo de programas y apoyos consideras más efectivos para mejorar el acceso y la calidad de los servicios de apoyo psicológico y prevención de las adicciones en el municipio de El Marqués?</label>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="psicologico_adicciones_acciones" id="centros_terapia" value="Creación de centros de terapia y apoyo psicológico">
+                            <label class="form-check-label" for="centros_terapia">Creación de centros de terapia y apoyo psicológico</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="psicologico_adicciones_acciones" id="programas_prevencion" value="Programas de prevención y tratamiento de adicciones">
+                            <label class="form-check-label" for="programas_prevencion">Programas de prevención y tratamiento de adicciones</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="psicologico_adicciones_acciones" id="capacitacion_profesionales" value="Capacitación y actualización de profesionales de la salud">
+                            <label class="form-check-label" for="capacitacion_profesionales">Capacitación y actualización de profesionales de la salud</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="psicologico_adicciones_acciones" id="campanas_concientizacion" value="Campañas de concientización y educación sobre la importancia de la salud mental">
+                            <label class="form-check-label" for="campanas_concientizacion">Campañas de concientización y educación sobre la importancia de la salud mental</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="psicologico_adicciones_acciones" id="redes_apoyo" value="Establecimiento de redes de apoyo comunitario">
+                            <label class="form-check-label" for="redes_apoyo">Establecimiento de redes de apoyo comunitario</label>
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="otros_psicologico_adicciones">Otros (especifica):</label>
+                            <input type="text" class="form-control" id="otros_psicologico_adicciones" name="otros_psicologico_adicciones">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONCLUSIÓN -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <i class="fas fa-comment"></i> Conclusión
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="comentarios">Comentarios adicionales:</label>
+                    <textarea class="form-control" id="comentarios" name="comentarios" rows="4"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- BOTÓN DE ENVÍO -->
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Enviar</button>
+        </div>
+    </form>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js"></script> 
 </body>
 </html>
