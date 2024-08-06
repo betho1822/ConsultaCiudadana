@@ -9,12 +9,16 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <div class="container mt-5">
+        <div class="container mt-5">
         <h1 class="text-center">Consulta Ciudadana</h1>
-        <p class="lead text-center">
-            ¡Bienvenidos (as)! <br>
-            ¡Tu participación es esencial en la Consulta Ciudadana diseñada para la formulación del Plan Municipal de Desarrollo de El Marqués, Querétaro 2024-2027! Este plan será fundamental para identificar los objetivos principales y las acciones que se llevarán a cabo durante el próximo periodo de gobierno municipal. Queremos escuchar tu voz para dar forma al plan rector de nuestro municipio en los próximos tres años. ¡Juntos podemos construir el Marqués que todos queremos!
-        </p>
+        <div class="card mt-4">
+            <div class="card-body">
+                <p class="lead text-center">
+                    ¡Bienvenidos (as)! <br>
+                    ¡Tu participación es esencial en la Consulta Ciudadana diseñada para la formulación del Plan Municipal de Desarrollo de El Marqués, Querétaro 2024-2027! Este plan será fundamental para identificar los objetivos principales y las acciones que se llevarán a cabo durante el próximo periodo de gobierno municipal. Queremos escuchar tu voz para dar forma al plan rector de nuestro municipio en los próximos tres años. ¡Juntos podemos construir el Marqués que todos queremos!
+                </p>
+            </div>
+        </div>
 
         <h2 class="mt-4">Datos Personales (Opcionales)</h2>
         <form id="consultaForm">
@@ -53,10 +57,7 @@
             </div>
             <h2 class="mt-4">Cuestionario</h2>
             <p>Selecciona la respuesta que consideres más adecuada para cada pregunta marcando la casilla correspondiente o escribiendo la respuesta en los espacios correspondientes. En algunas preguntas podrás seleccionar más de una respuesta si consideras que aplica.</p>
-
-            </form>
-
-            
+        </form>
     </div>
         <div class="container mt-5">
         <h1 class="mb-4">Cuestionario</h1>
@@ -523,12 +524,14 @@
         </div>
 
         <!-- BOTÓN DE ENVÍO -->
-        <div class="text-center">
-            <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Enviar</button>
+        <div class="text-center" onclick="capturarDatosFormulario()">
+            <button type="button" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Enviar</button>
         </div>
     </form>
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="script.js"></script> 
 </body>
 </html>
