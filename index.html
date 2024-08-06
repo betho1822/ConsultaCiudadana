@@ -7,60 +7,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css"> 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .form-container {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 600px;
-        }
-        .form-container h2 {
-            margin-bottom: 20px;
-            font-size: 1.5em;
-            color: #333;
-        }
-        .form-container p {
-            margin-bottom: 20px;
-            color: #666;
-        }
-        .form-container .form-group {
-            margin-bottom: 15px;
-        }
-        .form-container label {
-            display: block;
-            margin-bottom: 5px;
-            color: #333;
-        }
-        .form-container input,
-        .form-container select {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 1em;
-        }
-        .form-container input[type="number"],
-        .form-container input[type="tel"] {
-            -moz-appearance: textfield;
-        }
-        .form-container input[type="number"]::-webkit-outer-spin-button,
-        .form-container input[type="number"]::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-    </style>
 </head>
 <body>
     <div class="container mt-5">
@@ -70,44 +16,47 @@
             ¡Tu participación es esencial en la Consulta Ciudadana diseñada para la formulación del Plan Municipal de Desarrollo de El Marqués, Querétaro 2024-2027! Este plan será fundamental para identificar los objetivos principales y las acciones que se llevarán a cabo durante el próximo periodo de gobierno municipal. Queremos escuchar tu voz para dar forma al plan rector de nuestro municipio en los próximos tres años. ¡Juntos podemos construir el Marqués que todos queremos!
         </p>
 
-        <div class="form-container">
-            <h2>Datos Personales (Opcionales)</h2>
-            <form id="consultaForm">
-                <div class="form-group">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" class="form-control">
+        <h2 class="mt-4">Datos Personales (Opcionales)</h2>
+        <form id="consultaForm">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre">
                 </div>
-                <div class="form-group">
-                    <label for="edad">Edad:</label>
-                    <input type="number" id="edad" class="form-control">
+                <div class="col-md-6 mb-3">
+                    <label for="edad" class="form-label">Edad:</label>
+                    <input type="number" class="form-control" id="edad">
                 </div>
-                <div class="form-group">
-                    <label for="ocupacion">Ocupación:</label>
-                    <input type="text" id="ocupacion" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="sexo">Sexo:</label>
-                    <select id="sexo" class="form-select">
+            </div>
+            <div class="mb-3">
+                <label for="ocupacion" class="form-label">Ocupación:</label>
+                <input type="text" class="form-control" id="ocupacion">
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="sexo" class="form-label">Sexo:</label>
+                    <select class="form-select" id="sexo">
                         <option selected>Selecciona una opción</option>
                         <option value="masculino">Masculino</option>
                         <option value="femenino">Femenino</option>
                         <option value="otro">Otro</option>
                     </select>
                 </div>
-                <div class="form-group">
-                    <label for="localidad">Localidad:</label>
-                    <input type="text" id="localidad" class="form-control">
+                <div class="col-md-6 mb-3">
+                    <label for="localidad" class="form-label">Localidad:</label>
+                    <input type="text" class="form-control" id="localidad">
                 </div>
-                <div class="form-group">
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" class="form-control">
-                </div>
-                <h2>Cuestionario</h2>
-                <p>Selecciona la respuesta que consideres más adecuada para cada pregunta marcando la casilla correspondiente o escribiendo la respuesta en los espacios correspondientes. En algunas preguntas podrás seleccionar más de una respuesta si consideras que aplica.</p>
+            </div>
+            <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono:</label>
+                <input type="tel" class="form-control" id="telefono">
+            </div>
+            <h2 class="mt-4">Cuestionario</h2>
+            <p>Selecciona la respuesta que consideres más adecuada para cada pregunta marcando la casilla correspondiente o escribiendo la respuesta en los espacios correspondientes. En algunas preguntas podrás seleccionar más de una respuesta si consideras que aplica.</p>
+
             </form>
-        </div>
 
-
+            
     </div>
         <div class="container mt-5">
         <h1 class="mb-4">Cuestionario</h1>
