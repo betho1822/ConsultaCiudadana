@@ -34,51 +34,56 @@
             </div>
         </div>
 
-        <h2 class="mt-4">Datos Personales (Opcionales)</h2>
-        <form id="consultaForm">
-            <div class="row">
-                <div class="col-md-6 mb-3">
-                    <label for="nombre" class="form-label">Nombre:</label>
-                    <input type="text" class="form-control" id="nombre">
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="edad" class="form-label">Edad:</label>
-                    <input type="number" class="form-control" id="edad">
-                </div>
+                <div class="card border-info mb-3 mt-4">
+            <div class="card-header bg-info text-white">
+                <h2 class="mb-0">Datos Personales</h2>
             </div>
-            <div class="mb-3">
-                <label for="ocupacion" class="form-label">Ocupación:</label>
-                <input type="text" class="form-control" id="ocupacion">
+            <div class="card-body">
+                <form id="consultaForm">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="nombre" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="edad" class="form-label">Edad:</label>
+                            <input type="number" class="form-control" id="edad">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="ocupacion" class="form-label">Ocupación:</label>
+                        <input type="text" class="form-control" id="ocupacion">
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="sexo" class="form-label">Sexo:</label>
+                            <select class="form-select" id="sexo">
+                                <option selected>Selecciona una opción</option>
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="localidad" class="form-label">Localidad:</label>
+                            <input type="text" class="form-control" id="localidad">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono:</label>
+                        <input type="tel" class="form-control" id="telefono">
+                    </div>
+                </form>
             </div>
-            <div class="row">
-                <div class="col-md-6 mb-3">
-                    <label for="sexo" class="form-label">Sexo:</label>
-                    <select class="form-select" id="sexo">
-                        <option selected>Selecciona una opción</option>
-                        <option value="masculino">Masculino</option>
-                        <option value="femenino">Femenino</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <label for="localidad" class="form-label">Localidad:</label>
-                    <input type="text" class="form-control" id="localidad">
-                </div>
-            </div>
-            <div class="mb-3">
-                <label for="telefono" class="form-label">Teléfono:</label>
-                <input type="tel" class="form-control" id="telefono">
-            </div>
-            <div class="card border-info mb-3 mt-4">
-    <div class="card-body">
-        <h2 class="card-title justify-content-center">Instrucciones</h2>
-        <p class="card-text">Selecciona la respuesta que consideres más adecuada para cada pregunta marcando la casilla correspondiente o escribiendo la respuesta en los espacios correspondientes. En algunas preguntas podrás seleccionar más de una respuesta si consideras que aplica.</p>
-        <!-- Aquí puedes añadir las preguntas del cuestionario -->
-    </div>
-</div>
+        </div>
 
-        </form>
-    </div>
+        <div class="card border-info mb-3 mt-4">
+            <div class="card-body">
+                <h2 class="card-title">Instrucciones</h2>
+                <p class="card-text">Selecciona la respuesta que consideres más adecuada para cada pregunta marcando la casilla correspondiente o escribiendo la respuesta en los espacios correspondientes. En algunas preguntas podrás seleccionar más de una respuesta si consideras que aplica.</p>
+                <!-- Aquí puedes añadir las preguntas del cuestionario -->
+            </div>
+        </div>
         <div class="container mt-5">
         <h1 class="mb-4">Cuestionario</h1>
         
